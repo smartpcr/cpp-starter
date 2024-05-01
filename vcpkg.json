@@ -2,6 +2,7 @@
     "name": "restapi",
     "version-string": "0.1.0",
     "dependencies": [
-        "fmt"
+        "fmt",
+        "httplib"
     ]
 }

@@ -3,7 +3,8 @@ project(restapi)
 set(CMAKE_CXX_STANDARD 23)
 
 find_package(fmt CONFIG REQUIRED)
+find_package(httplib CONFIG REQUIRED)
 
 add_executable(restapi main.cpp)
 
-target_link_libraries(restapi PRIVATE fmt::fmt)
+target_link_libraries(restapi PRIVATE fmt::fmt httplib::httplib)
