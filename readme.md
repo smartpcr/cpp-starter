@@ -31,4 +31,21 @@ sudo apt-get install build-essential g++ gdb cmake ninja-build
     setx VCPKG_ROOT "E:\vcpkg"
     setx PATH "%PATH%;E:\vcpkg"
     ```
-    
+2. On linux
+
+    ```bash
+    git clone https://github.com/microsoft/vcpkg.git vcpkg && cd vcpkg && ./bootstrap-vcpkg.sh
+    export VCPKG_ROOT=$PWD
+    echo "export VCPKG_ROOT=$PWD" >> ~/.zshrc
+    ```
+3. create presets for windows and linux, see example in `CMakePresets.json`
+4. install packages, this should update `vcpkg.json` file
+
+    ```bash
+    vcpkg install fmt
+    vcpkg install spdlog
+    vcpkg install gtest
+    vcpkg install cpp-httplib # https://github.com/yhirose/cpp-httplib
+    vcpkg install nlohmann-json # https://github.com/nlohmann/json
+    vcpkg install jwt-cpp # https://github.com/Thalhammer/jwt-cpp
+    ```
