@@ -49,3 +49,13 @@ sudo apt-get install build-essential g++ gdb cmake ninja-build
     vcpkg install nlohmann-json # https://github.com/nlohmann/json
     vcpkg install jwt-cpp # https://github.com/Thalhammer/jwt-cpp
     ```
+
+## Goals
+
+1. [x] how to use cmake for windows and linux
+2. [x] manage dependencies using vcpkg
+3. [ ] implement logging and metrics
+4. [ ] use jwt for authentication
+5. [ ] use nlohmann-json for serialization
+6. [ ] implement rest api using httplib
+7. [ ] implement rest api using iis core on windows
