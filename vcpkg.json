@@ -2,7 +2,8 @@
     "name": "restapi",
     "version-string": "0.1.0",
     "dependencies": [
+        "cpp-httplib",
         "fmt",
-        "cpp-httplib"
+        "spdlog"
     ]
 }

@@ -1,18 +1,28 @@
 #include <fmt/core.h>
 #include <httplib.h>
+#include "logger.h"
+#include "constant.h"
 
 int main() {
+    Loggable logger;
+    Constant constant;
+
+    LOG_INFO(logger, constant.message);
     httplib::Client client("http://example.com");
     auto res = client.Get("/");
     if (res) {
-        std::cout << "Status: " << res->status << std::endl;
+        std::string statusString = "Status: " + std::to_string(res->status);
+        LOG_INFO(logger, statusString.c_str());
         for (const auto& [key, value] : res->headers) {
-            std::cout << key << ": " << value << std::endl;
+            std::string headerStr = key + ": " + value;
+            LOG_INFO(logger, headerStr.c_str());
         }
-        std::cout << "Body: " << res->body << std::endl;
+
+        LOG_DEBUG(logger, res->body.c_str());
     } else {
-        std::cout << "Failed to get a response" << std::endl;
+        LOG_ERROR(logger, constant.errorMessage);
     }
+
     fmt::print("Hello, World!\n");
     return 0;
 }

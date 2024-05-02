@@ -7,3 +7,6 @@ indent_size = 4
 
 [Makefile]
 indent_style = tab
+
+[*.vcxproj]
+indent_size = 2

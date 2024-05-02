@@ -7,4 +7,5 @@ cmake-build-release/
 .idea/
 bin/
 build/
+!build/.gitkeep
 vcpkg/

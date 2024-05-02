@@ -26,13 +26,11 @@ info: ## Display environment variables
 build-debug: clean ## Build the project in debug mode
 ifeq (${OS},Linux)
 	@echo "Building for Linux"
-	mkdir -p $(BUILDDIR)
 	cmake --preset=linux
 	cd $(BUILDDIR) && cmake .. -G "Ninja" -DCMAKE_CXX_COMPILER=g++ -DCMAKE_BUILD_TYPE=Debug
 	cd $(BUILDDIR) && cmake --build .
 else ifeq (${OS},Windows_NT)
 	@echo "Building for Windows"
-	mkdir $(BUILDDIR)
 	cmake --preset=windows
 	cd $(BUILDDIR) && cmake .. -G "Visual Studio 17 2022" -DCMAKE_BUILD_TYPE=Debug
 	cd $(BUILDDIR) && cmake --build .
@@ -53,7 +51,6 @@ endif
 .PHONY: clean
 clean: ## Clean the build directory
 ifeq ($(wildcard $(BUILDDIR)/.*),)
-	@echo "Build directory already removed"
-else
-	rm -rf $(BUILDDIR)
+	@echo "Build directory not exists, creating it"
+	mkdir -p $(BUILDDIR)
 endif

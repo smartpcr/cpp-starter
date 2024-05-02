@@ -43,7 +43,7 @@ sudo apt-get install build-essential g++ gdb cmake ninja-build
 
     ```bash
     vcpkg install fmt
-    vcpkg install spdlog
+    vcpkg install spdlog # https://github.com/gabime/spdlog
     vcpkg install gtest
     vcpkg install cpp-httplib # https://github.com/yhirose/cpp-httplib
     vcpkg install nlohmann-json # https://github.com/nlohmann/json

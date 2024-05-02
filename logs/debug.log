@@ -1,0 +1,15 @@
+[2024-05-01 21:19:28.431] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:10] Welcome to spdlog!
+[2024-05-01 21:19:28.497] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:15] Status: 200
+[2024-05-01 21:19:28.498] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] Accept-Ranges: bytes
+[2024-05-01 21:19:28.498] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] Age: 553005
+[2024-05-01 21:19:28.498] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] Cache-Control: max-age=604800
+[2024-05-01 21:19:28.499] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] Connection: close
+[2024-05-01 21:19:28.499] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] Content-Length: 1256
+[2024-05-01 21:19:28.499] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] Content-Type: text/html; charset=UTF-8
+[2024-05-01 21:19:28.500] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] Date: Thu, 02 May 2024 04:19:26 GMT
+[2024-05-01 21:19:28.500] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] Etag: "3147526947"
+[2024-05-01 21:19:28.500] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] Expires: Thu, 09 May 2024 04:19:26 GMT
+[2024-05-01 21:19:28.501] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] Last-Modified: Thu, 17 Oct 2019 07:18:26 GMT
+[2024-05-01 21:19:28.501] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] Server: ECAcc (sed/58CB)
+[2024-05-01 21:19:28.501] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] Vary: Accept-Encoding
+[2024-05-01 21:19:28.502] [myLogger] [info] [E:\work\github\cpp\cpp-starter\main.cpp:main:18] X-Cache: HIT
